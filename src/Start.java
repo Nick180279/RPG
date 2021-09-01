@@ -91,7 +91,7 @@ public class Start {
         System.out.println("p1 Successful attacks : " + player1.winContestCounter);
         System.out.println("p2 Successful attacks : " + player2.winContestCounter);
 
-        System.out.println("Test 5. ");
+        System.out.println("Test 4. ");
         System.out.println("P1 and P2 roll just dice versus each other");
         System.out.println("P1 and P2 skills and stats did not added");
         System.out.println("Dice : d20");
@@ -100,13 +100,7 @@ public class Start {
         player2.winContestCounter = 0;
         for (int i = 0; i < 1000; i++) {
             int p1dice =  player1.d20.nextInt(dice) + 1;
-            //int p1Attack = player1.Agl + player1.fight.value + p1dice;
-            //int p1Defence = player1.Perc + player1.fight.value + p1dice;
             int p2dice = player2.d20.nextInt(dice) + 1;
-            //int p2Attack = player2.Agl + player2.fight.value + p2dice;
-            //int p2Defence = player2.Perc + player2.fight.value + p2dice;
-            //if (p1Attack > p2Defence) player1.winContestCounter++;
-            //if (p2Attack > p1Defence) player2.winContestCounter++;
             if (p1dice > p2dice) player1.winContestCounter++;
             if (p2dice > p1dice) player2.winContestCounter++;
         }
