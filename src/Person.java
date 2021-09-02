@@ -9,7 +9,6 @@ public class Person {
     int Agl;
     int Wis;
     Skill fight;
-    Random d20 = new Random();
     int winContestCounter;
 
     public Person (int str, int perc, int end, int cha, int intl, int agl, int wis, int fight) {
