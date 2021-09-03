@@ -2,11 +2,16 @@ import java.util.Random;
 
 public class Start {
     public static void main (String [] args) {
-        int [] drops = new int [1000];
-        int [] stat = new int[21];
-        int dice;
+//        int [] drops = new int [1000];
+//        int [] stat = new int[21];
+//        int dice;
+
         Dice d20 = new Dice(20);
         Dice d10 = new Dice(10);
+        Dice d8 = new Dice(8);
+        Dice d6 = new Dice(6);
+        int amountDamagemace = 0;
+        int amountDamageLight = 0;
         Person player1 = new Person(1,3,2,0,1,2,0,0);
         Person player2 = new Person(1,0,2,0,1,2,0,0);
 //        System.out.println("Test");
@@ -47,7 +52,6 @@ public class Start {
         System.out.println("P1 and P2 roll attack|defence versus each other");
         System.out.println("P1 and P2 have equivalent skills and stats");
         System.out.println("Dice : d10");
-        dice = 10;
         player1.winContestCounter = 0;
         player2.winContestCounter = 0;
 
@@ -99,5 +103,15 @@ public class Start {
 //        System.out.println("********************************");
 //        System.out.println("p1 Successful attacks : " + player1.winContestCounter);
 //        System.out.println("p2 Successful attacks : " + player2.winContestCounter);
+//        for (int i = 0; i < 1000; i++) {
+//            amountDamagemace+= d6.Roll() + 2;
+//            amountDamageLight+= d8.Roll() + d8.Roll();
+//        }
+//        int strmod = 2;
+//        int accmod = 3;
+//        int ac = 13;
+//
+//        System.out.println("Total damage by Mace : " + amountDamagemace * (((20.0-ac) + strmod + accmod)/20));
+//        System.out.println("Total damage by Light : " + amountDamageLight * (15.0/20));
     }
 }
